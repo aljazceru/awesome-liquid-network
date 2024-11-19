@@ -1,5 +1,3 @@
-# Awesome Liquid Network
-
 A curated list of Liquid Network resources, libraries, tools and applications. Liquid Network is a Bitcoin layer-2 (technically sidechain) enabling the issuance of security tokens and other digital assets.
 
 ## Contents
