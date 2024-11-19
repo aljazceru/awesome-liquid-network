@@ -41,20 +41,20 @@ A curated list of Liquid Network resources, libraries, tools and applications. L
 ## Development Tools
 - [Liquid swap](https://github.com/Blockstream/liquid-swap/)![stars](https://img.shields.io/github/stars/Blockstream/liquid-swap.svg?style=social) - Swap Issued Assets on the Liquid Network using Confidential Transactions
 - [Liquid.Coach](https://vulpemventures.github.io/liquid.coach) - Browser-based transaction management tool
-- [LiquiDEX](https://github.com/RCasatta/LiquiDEX)![stars](https://img.shields.io/github/stars/RCasatta/LiquiDEX.svg?style=social) - Swap Issued Assets on the Liquid Network using Confidential Transactions - Decentralized exchange framework  
 - [TDEX](https://tdex.network/) - Trading platform for Liquid Network  
-- [Hal](https://github.com/stevenroose/hal/)![stars](https://img.shields.io/github/stars/stevenroose/hal.svg?style=social) - Swap Issued Assets on the Liquid Network using Confidential Transactions - Transaction debugging and creation tool with [hal elements](https://github.com/stevenroose/hal-elements/)
-- [Nigiri](https://github.com/vulpemventures/nigiri)![stars](https://img.shields.io/github/stars/vulpemventures/nigiri.svg?style=social) - Swap Issued Assets on the Liquid Network using Confidential Transactions - Docker development environment for Bitcoin, Lightning and Liquid  
-- [Liquid-melt](https://github.com/Blockstream/liquid-melt)![stars](https://img.shields.io/github/stars/Blockstream/liquid-melt.svg?style=social) - Swap Issued Assets on the Liquid Network using Confidential Transactions - Tool for importing collectible tokens  
-- [Jade Wallet](https://github.com/Blockstream/Jade)![stars](https://img.shields.io/github/stars/Blockstream/Jade.svg?style=social) - Swap Issued Assets on the Liquid Network using Confidential Transactions - Hardware wallet implementation
+- [Hal](https://github.com/stevenroose/hal/)![stars](https://img.shields.io/github/stars/stevenroose/hal.svg?style=social) - Transaction debugging and creation tool with [hal elements](https://github.com/stevenroose/hal-elements/)
+- [Nigiri](https://github.com/vulpemventures/nigiri)![stars](https://img.shields.io/github/stars/vulpemventures/nigiri.svg?style=social) - Docker development environment for Bitcoin, Lightning and Liquid  
+- [Liquid-melt](https://github.com/Blockstream/liquid-melt)![stars](https://img.shields.io/github/stars/Blockstream/liquid-melt.svg?style=social) - Tool for importing collectible tokens  
+- [Jade Wallet](https://github.com/Blockstream/Jade)![stars](https://img.shields.io/github/stars/Blockstream/Jade.svg?style=social) - Hardware wallet implementation
+- [LiquiDEX](https://github.com/RCasatta/LiquiDEX)![stars](https://img.shields.io/github/stars/RCasatta/LiquiDEX.svg?style=social) - Decentralized exchange framework  
 
 ## Libraries
-- [Libwally-core](https://github.com/ElementsProject/libwally-core)![stars](https://img.shields.io/github/stars/ElementsProject/libwally-core.svg?style=social) - Swap Issued Assets on the Liquid Network using Confidential Transactions - C/C++ library with Python, Java, and JavaScript bindings  
-- [Rust-elements](https://github.com/ElementsProject/rust-elements)![stars](https://img.shields.io/github/stars/ElementsProject/rust-elements.svg?style=social) - Swap Issued Assets on the Liquid Network using Confidential Transactions - Rust implementation for Liquid/Elements  
-- [Rust-liquid-rpc](https://github.com/stevenroose/rust-liquid-rpc)![stars](https://img.shields.io/github/stars/stevenroose/rust-liquid-rpc.svg?style=social) - Swap Issued Assets on the Liquid Network using Confidential Transactions - Rust RPC interface for liquidd  
-- [go-elements](https://github.com/vulpemventures/go-elements)![stars](https://img.shields.io/github/stars/vulpemventures/go-elements.svg?style=social) - Swap Issued Assets on the Liquid Network using Confidential Transactions - Go support for Liquid transactions  
-- [liquidjs-lib](https://github.com/provable-things/liquidjs-lib)![stars](https://img.shields.io/github/stars/provable-things/liquidjs-lib.svg?style=social) - Swap Issued Assets on the Liquid Network using Confidential Transactions - JavaScript library for Liquid Network  
-- [python-elementstx](https://github.com/Simplexum/python-elementstx)![stars](https://img.shields.io/github/stars/Simplexum/python-elementstx.svg?style=social) - Swap Issued Assets on the Liquid Network using Confidential Transactions - Python library for Elements transactions
+- [Libwally-core](https://github.com/ElementsProject/libwally-core)![stars](https://img.shields.io/github/stars/ElementsProject/libwally-core.svg?style=social) - C/C++ library with Python, Java, and JavaScript bindings  
+- [Rust-elements](https://github.com/ElementsProject/rust-elements)![stars](https://img.shields.io/github/stars/ElementsProject/rust-elements.svg?style=social) - Rust implementation for Liquid/Elements  
+- [Rust-liquid-rpc](https://github.com/stevenroose/rust-liquid-rpc)![stars](https://img.shields.io/github/stars/stevenroose/rust-liquid-rpc.svg?style=social) - Rust RPC interface for liquidd  
+- [go-elements](https://github.com/vulpemventures/go-elements)![stars](https://img.shields.io/github/stars/vulpemventures/go-elements.svg?style=social) - Go support for Liquid transactions  
+- [liquidjs-lib](https://github.com/provable-things/liquidjs-lib)![stars](https://img.shields.io/github/stars/provable-things/liquidjs-lib.svg?style=social) - JavaScript library for Liquid Network  
+- [python-elementstx](https://github.com/Simplexum/python-elementstx)![stars](https://img.shields.io/github/stars/Simplexum/python-elementstx.svg?style=social) - Python library for Elements transactions
 
 ## Testing Resources
 - [Testnet Faucet](https://faucet.vulpem.com) - Get testnet L-BTC, USDt, and LCAD  
@@ -62,7 +62,7 @@ A curated list of Liquid Network resources, libraries, tools and applications. L
 - [Liquid Testnet Portal](https://liquidtestnet.com/) - Testnet development environment
 
 ## Community 
-- [Liquid Dev telegram](https://t.me/liquid_devel) - 
+- [Liquid Dev telegram](https://t.me/liquid_devel)
 - [liquid.net community](https://community.liquid.net/home)
 
 ## Related Resources
