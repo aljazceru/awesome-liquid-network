@@ -46,7 +46,8 @@ A curated list of Liquid Network resources, libraries, tools and applications. L
 - [Nigiri](https://github.com/vulpemventures/nigiri)![stars](https://img.shields.io/github/stars/vulpemventures/nigiri.svg?style=social) - Docker development environment for Bitcoin, Lightning and Liquid  
 - [Liquid-melt](https://github.com/Blockstream/liquid-melt)![stars](https://img.shields.io/github/stars/Blockstream/liquid-melt.svg?style=social) - Tool for importing collectible tokens  
 - [Jade Wallet](https://github.com/Blockstream/Jade)![stars](https://img.shields.io/github/stars/Blockstream/Jade.svg?style=social) - Hardware wallet implementation
-- [LiquiDEX](https://github.com/RCasatta/LiquiDEX)![stars](https://img.shields.io/github/stars/RCasatta/LiquiDEX.svg?style=social) - Decentralized exchange framework  
+- [LiquiDEX](https://github.com/RCasatta/LiquiDEX)![stars](https://img.shields.io/github/stars/RCasatta/LiquiDEX.svg?style=social) - Decentralized exchange framework
+- [BreezSDK](https://sdk-doc-liquid.breez.technology/) - Breez Liquid sdk for "nodeless" lightning payments
 
 ## Libraries
 - [Libwally-core](https://github.com/ElementsProject/libwally-core)![stars](https://img.shields.io/github/stars/ElementsProject/libwally-core.svg?style=social) - C/C++ library with Python, Java, and JavaScript bindings  
