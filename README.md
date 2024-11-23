@@ -69,12 +69,11 @@ A curated list of Liquid Network resources, libraries, tools and applications. L
 ## Related Resources
 
 To explore other aspects of freedom tech ecosystem, check out these additional resource directories:
-- [pubkey.tech](https://pubkey.tech) - Pubky is an open protocol for per-public-key backends for censorship resistant web applications
-- [dlc.wiki](https://www.dlc.wiki) - Everything you need to know about Discreet Log Contracts (DLCs), a Bitcoin smart contract technology
-- [nostr.net](https://www.nostr.net) - A complete guide to Nostr (Notes and Other Stuff Transmitted by Relays), including projects, implementations, developer tools and all other resources
-- [ungovernable.tech](https://ungovernable.tech) - A curated collection of resources on encryption, privacy tools, and decentralized technologies
-- [lightning-network.tech](https://www.lightning-network.tech/)  - A curated collection of essential tools, guides, and communities for Bitcoin Lightning Network node
-operators
+- [pubkey.tech](https://pubkey.tech) - Pubky, an open protocol for censorship resistant web applications
+- [dlc.wiki](https://www.dlc.wiki) - Everything you need to know about Discreet Log Contracts,
+- [nostr.net](https://www.nostr.net) - A complete guide to Nostr, including projects, implementations, developer tools and all other resources
+- [ungovernable.tech](https://ungovernable.tech) - A collection of resources on encryption, privacy tools, and decentralized technologies
+- [lightning-network.tech](https://www.lightning-network.tech/)  - A collection of essential tools, guides, and communities for Lightning Network node operators
 
 ## Contributing
 
