@@ -32,11 +32,18 @@ A curated list of Liquid Network resources, libraries, tools and applications. L
 - [Liquid.horse](https://liquid.horse/) - Comprehensive sidechain statistics  
 
 ## Liquid Network Asset
+#### Mainnet
 - [Asset Registry JSON](https://assets.blockstream.info/) - Official Blockstream asset registry
-- [Testnet Asset Registry](https://assets-testnet.blockstream.info/) - Asset registry for testnet  
 - [Production Assets List](https://blockstream.info/liquid/assets) - Human-readable list of all assets
 - [Blockstream AMP](https://blockstream.com/amp/) - Asset management platform for institutions
 - [AMP Documentation](https://docs.blockstream.com/blockstream-amp/overview.html) - Technical documentation for Blockstream AMP
+
+#### Testnet
+- [Testnet Asset Registry](https://assets-testnet.blockstream.info/) - Asset registry for testnet
+- [Testnet Blockstream AMP](https://assets.uat.blockstream.com) - Asset management platform for testnet
+- [Testnet faucet](https://liquidtestnet.com/faucet) - Liquid network testnet faucet
+- [Web wallet](https://liquidwebwallet.org/testnet/) - Liquid web wallet testnet
+- [Testnet explorer](https://liquidtestnet.com/explorer) - Testnet explorer for liquid network
 
 ## Development Tools
 - [Liquid swap](https://github.com/Blockstream/liquid-swap/)![stars](https://img.shields.io/github/stars/Blockstream/liquid-swap.svg?style=social) - Swap Issued Assets on the Liquid Network using Confidential Transactions
