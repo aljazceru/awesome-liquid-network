@@ -63,6 +63,7 @@ A curated list of Liquid Network resources, libraries, tools and applications. L
 - [go-elements](https://github.com/vulpemventures/go-elements)![stars](https://img.shields.io/github/stars/vulpemventures/go-elements.svg?style=social) - Go support for Liquid transactions  
 - [liquidjs-lib](https://github.com/provable-things/liquidjs-lib)![stars](https://img.shields.io/github/stars/provable-things/liquidjs-lib.svg?style=social) - JavaScript library for Liquid Network  
 - [python-elementstx](https://github.com/Simplexum/python-elementstx)![stars](https://img.shields.io/github/stars/Simplexum/python-elementstx.svg?style=social) - Python library for Elements transactions
+- [LWK](https://github.com/blockstream/lwk)![stars](https://img.shields.io/github/stars/blockstream/lwk.svg?style=social) - Rust libraries with bindings in Swift, Kotlin, Python, C#, Dart, React Native, WASM.  
 
 ## Testing Resources
 - [Testnet Faucet](https://faucet.vulpem.com) - Get testnet L-BTC, USDt, and LCAD  
