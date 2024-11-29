@@ -77,7 +77,7 @@ A curated list of Liquid Network resources, libraries, tools and applications. L
 ## Related Resources
 
 To explore other aspects of freedom tech ecosystem, check out these additional resource directories:
-- [pubkey.tech](https://pubkey.tech) - Pubky, an open protocol for censorship resistant web applications
+- [pubky.tech](https://pubky.tech) - Pubky, an open protocol for censorship resistant web applications
 - [dlc.wiki](https://www.dlc.wiki) - Everything you need to know about Discreet Log Contracts,
 - [nostr.net](https://www.nostr.net) - A complete guide to Nostr, including projects, implementations, developer tools and all other resources
 - [ungovernable.tech](https://ungovernable.tech) - A collection of resources on encryption, privacy tools, and decentralized technologies
