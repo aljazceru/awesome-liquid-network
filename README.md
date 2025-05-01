@@ -46,6 +46,7 @@ A curated list of Liquid Network resources, libraries, tools and applications. L
 - [Testnet explorer](https://liquidtestnet.com/explorer) - Testnet explorer for liquid network
 
 ## Development Tools
+
 - [Liquid swap](https://github.com/Blockstream/liquid-swap/)![stars](https://img.shields.io/github/stars/Blockstream/liquid-swap.svg?style=social) - Swap Issued Assets on the Liquid Network using Confidential Transactions
 - [Liquid.Coach](https://vulpemventures.github.io/liquid.coach) - Browser-based transaction management tool
 - [TDEX](https://tdex.network/) - Trading platform for Liquid Network  
@@ -56,7 +57,10 @@ A curated list of Liquid Network resources, libraries, tools and applications. L
 - [LiquiDEX](https://github.com/RCasatta/LiquiDEX)![stars](https://img.shields.io/github/stars/RCasatta/LiquiDEX.svg?style=social) - Decentralized exchange framework
 - [BreezSDK](https://sdk-doc-liquid.breez.technology/) - Breez Liquid sdk for "nodeless" lightning payments
 
-## Libraries
+### LLMS
+- [lwk-llms](./llms/lwk-llms.txt) - context file for building LWK applications with llms
+
+### Libraries
 - [Libwally-core](https://github.com/ElementsProject/libwally-core)![stars](https://img.shields.io/github/stars/ElementsProject/libwally-core.svg?style=social) - C/C++ library with Python, Java, and JavaScript bindings  
 - [Rust-elements](https://github.com/ElementsProject/rust-elements)![stars](https://img.shields.io/github/stars/ElementsProject/rust-elements.svg?style=social) - Rust implementation for Liquid/Elements  
 - [Rust-liquid-rpc](https://github.com/stevenroose/rust-liquid-rpc)![stars](https://img.shields.io/github/stars/stevenroose/rust-liquid-rpc.svg?style=social) - Rust RPC interface for liquidd  
@@ -65,7 +69,7 @@ A curated list of Liquid Network resources, libraries, tools and applications. L
 - [python-elementstx](https://github.com/Simplexum/python-elementstx)![stars](https://img.shields.io/github/stars/Simplexum/python-elementstx.svg?style=social) - Python library for Elements transactions
 - [LWK](https://github.com/blockstream/lwk)![stars](https://img.shields.io/github/stars/blockstream/lwk.svg?style=social) - Rust libraries with bindings in Swift, Kotlin, Python, C#, Dart, React Native, WASM.  
 
-## Testing Resources
+### Testing Resources
 - [Testnet Faucet](https://faucet.vulpem.com) - Get testnet L-BTC, USDt, and LCAD  
 - [Liquid.beer Demo](https://liquid.beer/) - Demo assets and testing platform  
 - [Liquid Testnet Portal](https://liquidtestnet.com/) - Testnet development environment

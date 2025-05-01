@@ -1,0 +1,458 @@
+# Liquid Wallet Kit (LWK) Complete Guide
+
+## Overview
+
+Liquid Wallet Kit (LWK) is a collection of Rust crates for [Liquid](https://liquid.net) Wallets. It provides modular building blocks for Liquid wallet development, enabling various use cases. Instead of a monolithic approach, LWK offers function-specific libraries for flexibility and ergonomic development.
+
+## Features
+
+* **Watch-Only wallet support**: Using CT descriptors
+* **PSET based**: Transactions via Partially Signed Elements Transaction format
+* **Multiple backends**: Electrum and Esplora support
+* **Asset operations**: Issuance, reissuance, and burn support
+* **Multisig support**: Create wallets controlled by any combination of hardware or software signers
+* **Hardware signer support**: Currently Jade, with more coming soon
+* **Cross-language bindings**: Python, Kotlin, Swift, and C# (experimental) 
+* **WASM support**: Browser-based wallet development
+* **JSON-RPC Server**: All functions available via JSON-RPC
+
+## Architecture
+
+LWK is structured into component crates:
+
+* `lwk_cli`: CLI tool for LWK wallets
+* `lwk_wollet`: Watch-only wallet library
+* `lwk_signer`: Interacts with Liquid signers
+* `lwk_jade`: Jade hardware wallet support
+* `lwk_bindings`: Cross-language bindings
+* `lwk_wasm`: WebAssembly support
+* Other utility crates: `lwk_common`, `lwk_rpc_model`, `lwk_tiny_rpc`, etc.
+
+## Installation
+
+### Python Bindings
+
+Install from PyPI:
+
+```bash
+pip install lwk
+```
+
+Or build from source:
+
+```bash
+cd lwk/lwk_bindings
+virtualenv venv
+source venv/bin/activate
+pip install maturin maturin[patchelf] uniffi-bindgen
+maturin develop
+```
+
+### CLI Tool
+
+Install from crates.io:
+
+```bash
+cargo install lwk_cli
+# OR with serial support for Jade hardware wallet
+cargo install lwk_cli --features serial
+```
+
+Build from source:
+
+```bash
+git clone git@github.com:Blockstream/lwk.git
+cd lwk
+cargo install --path ./lwk_cli/
+# OR with serial support
+cargo install --path ./lwk_cli/ --features serial
+```
+
+## Python Usage Examples
+
+### Core Concepts
+
+1. **Network**: Represents the Liquid network (mainnet, testnet, regtest)
+2. **Mnemonic**: BIP39 seed phrase for key generation
+3. **Signer**: Handles signing PSETs (software or hardware)
+4. **Wollet**: Watch-only wallet for managing addresses and transactions
+5. **PSET**: Partially Signed Elements Transaction format
+
+### Setting Up a Wallet
+
+```python
+from lwk import *
+
+# Create or load mnemonic
+mnemonic = Mnemonic("abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon about")
+
+# Choose network
+network = Network.regtest_default()  # or Network.testnet() or Network.mainnet()
+policy_asset = network.policy_asset()  # L-BTC asset ID
+
+# Create an Electrum client
+client = ElectrumClient(node_electrum_url, tls=False, validate_domain=False)
+# OR use default testnet client
+# client = network.default_electrum_client()
+# client.ping()  # Check connection
+
+# Create a signer
+signer = Signer(mnemonic, network)
+
+# Get descriptor for watch-only wallet
+desc = signer.wpkh_slip77_descriptor()  # Single-sig P2WPKH with SLIP77 blinding
+
+# Create wallet
+wollet = Wollet(network, desc, datadir=None)  # datadir=None means no persistence
+```
+
+### Address Generation
+
+```python
+# Generate a receive address
+address_result = wollet.address(0)  # For index 0
+address = address_result.address()
+print(f"Address at index 0: {address}")
+
+# Generate next unused address
+next_address_result = wollet.address(None)  # None means next unused
+next_address = next_address_result.address()
+print(f"Next unused address: {next_address}")
+```
+
+### Checking Balance
+
+```python
+# Fund the wallet (in a test environment)
+# node = TestEnv()  # For regtest environment
+# funded_satoshi = 100000
+# txid = node.send_to_address(address, funded_satoshi, asset=None)  # None = L-BTC
+# wollet.wait_for_tx(txid, client)
+
+# Get wallet balance
+balances = wollet.balance()
+lbtc_balance = balances[policy_asset]
+print(f"L-BTC balance: {lbtc_balance} satoshi")
+
+# Iterate through all assets in wallet
+for asset_id, amount in balances.items():
+    print(f"Asset {asset_id}: {amount} satoshi")
+```
+
+### Sending L-BTC
+
+```python
+# Create a transaction
+recipient_address = "el1qqv8pmjjq942l6cjq69ygtt6gvmdmhesqmzazmwfsq7zwvan4kewdqmaqzegq50r2wdltkfsw9hw20zafydz4sqljz0eqe0vhc"
+amount_to_send = 1000  # satoshi
+
+# Create transaction builder
+builder = network.tx_builder()
+builder.add_lbtc_recipient(recipient_address, amount_to_send)
+
+# Create unsigned PSET
+unsigned_pset = builder.finish(wollet)
+
+# Sign the PSET
+signed_pset = signer.sign(unsigned_pset)
+
+# Finalize PSET
+finalized_pset = wollet.finalize(signed_pset)
+
+# Extract transaction
+tx = finalized_pset.extract_tx()
+
+# Broadcast transaction
+txid = client.broadcast(tx)
+print(f"Transaction broadcasted with ID: {txid}")
+
+# Wait for confirmation
+wollet.wait_for_tx(txid, client)
+```
+
+### Listing Transactions
+
+```python
+# Scan wallet (typically needed for testnet/mainnet, not regtest)
+update = client.full_scan(wollet)
+wollet.apply_update(update)
+
+# Get all transactions
+transactions = wollet.transactions()
+print(f"Number of transactions: {len(transactions)}")
+
+# Iterate through transactions
+for tx in transactions:
+    print(f"Transaction ID: {tx}")
+```
+
+### Asset Issuance
+
+```python
+# Create a contract for the asset
+contract = Contract(
+    domain="example.com", 
+    issuer_pubkey="0337cceec0beea0232ebe14cba0197a9fbd45fcf2ec946749de920e71434c2b904", 
+    name="Example Asset", 
+    precision=8, 
+    ticker="EXA", 
+    version=0
+)
+
+# Issue parameters
+issued_asset_amount = 10000  # satoshi
+reissuance_tokens = 1  # create 1 reissuance token
+recipient_address = address  # sending to our own address
+
+# Create transaction to issue asset
+builder = network.tx_builder()
+builder.issue_asset(issued_asset_amount, recipient_address, reissuance_tokens, recipient_address, contract)
+unsigned_pset = builder.finish(wollet)
+signed_pset = signer.sign(unsigned_pset)
+finalized_pset = wollet.finalize(signed_pset)
+tx = finalized_pset.extract_tx()
+txid = client.broadcast(tx)
+
+# Get the newly created asset ID
+asset_id = signed_pset.inputs()[0].issuance_asset()
+token_id = signed_pset.inputs()[0].issuance_token()
+
+print(f"Issued asset ID: {asset_id}")
+print(f"Reissuance token ID: {token_id}")
+
+# Wait for confirmation
+wollet.wait_for_tx(txid, client)
+```
+
+### Asset Reissuance
+
+```python
+# Reissue additional units of an existing asset
+reissue_amount = 100  # satoshi
+
+builder = network.tx_builder()
+builder.reissue_asset(asset_id, reissue_amount, None, None)
+unsigned_pset = builder.finish(wollet)
+signed_pset = signer.sign(unsigned_pset)
+finalized_pset = wollet.finalize(signed_pset)
+tx = finalized_pset.extract_tx()
+txid = client.broadcast(tx)
+
+wollet.wait_for_tx(txid, client)
+```
+
+### Sending Assets
+
+```python
+# Send an asset to another address
+recipient_address = "el1qqv8pmjjq942l6cjq69ygtt6gvmdmhesqmzazmwfsq7zwvan4kewdqmaqzegq50r2wdltkfsw9hw20zafydz4sqljz0eqe0vhc"
+amount_to_send = 1000  # satoshi
+
+builder = network.tx_builder()
+builder.add_recipient(recipient_address, amount_to_send, asset_id)
+unsigned_pset = builder.finish(wollet)
+signed_pset = signer.sign(unsigned_pset)
+finalized_pset = wollet.finalize(signed_pset)
+tx = finalized_pset.extract_tx()
+txid = client.broadcast(tx)
+
+wollet.wait_for_tx(txid, client)
+```
+
+### Manual UTXO Selection
+
+```python
+# Get all available UTXOs
+utxos = wollet.utxos()
+
+# Create transaction with manual coin selection
+builder = network.tx_builder()
+builder.add_lbtc_recipient(recipient_address, amount_to_send)
+builder.set_wallet_utxos([utxos[0].outpoint()])  # Only use first UTXO
+unsigned_pset = builder.finish(wollet)
+
+# Verify only one input
+assert len(unsigned_pset.inputs()) == 1
+
+# Continue with signing and broadcasting as usual
+signed_pset = signer.sign(unsigned_pset)
+finalized_pset = wollet.finalize(signed_pset)
+tx = finalized_pset.extract_tx()
+txid = client.broadcast(tx)
+```
+
+### Creating a Multisig Wallet
+
+```python
+# Create two signers
+mnemonic1 = Mnemonic("abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon about")
+mnemonic2 = Mnemonic("tissue mix draw siren diesel escape menu misery tube yellow zoo measure")
+
+signer1 = Signer(mnemonic1, network)
+signer2 = Signer(mnemonic2, network)
+
+# Get key origin info and xpubs using BIP87 (for multisig)
+xpub1 = signer1.keyorigin_xpub(Bip.new_bip87())
+xpub2 = signer2.keyorigin_xpub(Bip.new_bip87())
+
+# Create 2-of-2 multisig descriptor
+desc_str = f"ct(elip151,elwsh(multi(2,{xpub1}/<0;1>/*,{xpub2}/<0;1>/*)))"
+desc = WolletDescriptor(desc_str)
+
+# Create wallet from descriptor
+multisig_wallet = Wollet(network, desc, datadir=None)
+```
+
+### Using AMP2 (2-of-2 signing template)
+
+```python
+mnemonic = Mnemonic("abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon about")
+network = Network.regtest_default()
+signer = Signer(mnemonic, network)
+
+# Create AMP2 template (Blockstream's 2-of-2 multisig format)
+amp2 = Amp2.new_testnet()
+xpub = signer.keyorigin_xpub(Bip.new_bip87())
+desc = amp2.descriptor_from_str(xpub)
+print(f"AMP2 descriptor: {desc.descriptor()}")
+```
+
+### Custom Persistence
+
+```python
+from lwk import *
+
+# Create a custom persistence class
+class PythonPersister(ForeignPersister):
+  data = []
+
+  def get(self, i):
+    try:
+      return self.data[i]
+    except:
+      None
+
+  def push(self, update):
+    self.data.append(update)
+
+# Create a descriptor
+desc = WolletDescriptor("ct(slip77(ab5824f4477b4ebb00a132adfd8eb0b7935cf24f6ac151add5d1913db374ce92),elwpkh([759db348/84'/1'/0']tpubDCRMaF33e44pcJj534LXVhFbHibPbJ5vuLhSSPFAw57kYURv4tzXFL6LSnd78bkjqdmE3USedkbpXJUPA1tdzKfuYSL7PianceqAhwL2UkA/<0;1>/*))#cch6wrnp")
+
+network = Network.testnet()
+client = network.default_electrum_client()
+
+# Link the custom persister
+persister = ForeignPersisterLink(PythonPersister())
+
+# Create wallet with custom persister
+wollet = Wollet.with_custom_persister(network, desc, persister)
+
+# Update wallet state
+update = client.full_scan(wollet)
+wollet.apply_update(update)
+total_txs = len(wollet.transactions())
+
+# Test persistence by creating a new wallet instance
+wollet = None  # Destroy original wallet
+w2 = Wollet.with_custom_persister(network, desc, persister)
+assert(total_txs == len(w2.transactions()))  # Data persisted correctly
+```
+
+### Unblinding Outputs
+
+```python
+# Externally unblind transaction outputs
+tx = finalized_pset.extract_tx()
+for output in tx.outputs():
+    spk = output.script_pubkey()
+    if output.is_fee():
+        continue
+    private_blinding_key = desc.derive_blinding_key(spk)
+    # Roundtrip the blinding key as caller might persist it as bytes
+    private_blinding_key = SecretKey.from_bytes(private_blinding_key.bytes())
+    secrets = output.unblind(private_blinding_key)
+    assert secrets.asset() == policy_asset
+```
+
+### PSET Details
+
+```python
+# Analyze a PSET
+details = wollet.pset_details(pset)
+
+# Get fee information
+fee = details.balance().fee()
+print(f"Fee: {fee} satoshi")
+
+# Check which inputs are signed
+signatures = details.signatures()
+for sig in signatures:
+    has_sig = sig.has_signature()
+    missing_sig = sig.missing_signature()
+    for pubkey, path in has_sig.items():
+        print(f"Input signed by {pubkey} using key at path {path}")
+    for pubkey, path in missing_sig.items():
+        print(f"Input missing signature from {pubkey} at path {path}")
+
+# Check recipients
+recipients = details.balance().recipients()
+for recipient in recipients:
+    print(f"Output {recipient.vout()}: {recipient.value()} satoshi of asset {recipient.asset()} to {recipient.address()}")
+```
+
+## Using the CLI Tool
+
+### Core Commands
+
+```bash
+# Start RPC server (default in Liquid Testnet)
+lwk_cli server start
+
+# Create new BIP39 mnemonic
+lwk_cli signer generate
+
+# Load a software signer
+lwk_cli signer load-software --signer sw --persist false --mnemonic "abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon about"
+
+# Create a p2wpkh wallet
+DESC=$(lwk_cli signer singlesig-desc -signer sw --descriptor-blinding-key slip77 --kind wpkh | jq -r .descriptor)
+lwk_cli wallet load --wallet ss -d $DESC
+
+# Get wallet balance
+lwk_cli wallet balance -w ss
+
+# Stop the server
+lwk_cli server stop
+```
+
+### Using with Jade Hardware Wallet
+
+```bash
+# Probe connected Jades
+lwk_cli signer jade-id
+
+# Load Jade
+lwk_cli signer load-jade --signer <SET_A_NAME_FOR_THIS_JADE> --id <ID>
+
+# Get xpub from loaded Jade
+lwk_cli signer xpub --signer <NAME_OF_THIS_JADE> --kind <bip84, bip49 or bip87>
+```
+
+## Important Notes
+
+1. **Liquid Blinding**: All Liquid transactions use confidential transactions, requiring blinding/unblinding.
+2. **Asset IDs**: Keep track of asset IDs for issued assets and reissuance tokens.
+3. **Network Selection**: Be careful to use the correct network (mainnet, testnet, regtest).
+4. **Error Handling**: Check for insufficient funds, malformed transactions, etc.
+5. **Deterministic Wallets**: All examples use BIP39 mnemonics for HD wallet derivation.
+6. **Descriptor Types**: Various descriptor types are available (wpkh, wsh, etc.).
+7. **Transaction Fees**: Remember to account for transaction fees in L-BTC.
+
+## Glossary
+
+- **CT descriptor**: Confidential Transaction descriptor, Liquid's version of Bitcoin output descriptors
+- **PSET**: Partially Signed Elements Transaction, Liquid's version of PSBT
+- **Wollet**: Watch-only wallet implementation in LWK
+- **L-BTC**: Liquid Bitcoin, the main asset on Liquid Network
+- **AMP2**: A specific 2-of-2 multisig configuration used by Blockstream
+- **SLIP77**: A standard for deterministic blinding keys
