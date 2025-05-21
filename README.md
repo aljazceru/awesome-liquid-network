@@ -73,6 +73,7 @@ A curated list of Liquid Network resources, libraries, tools and applications. L
 - [Testnet Faucet](https://faucet.vulpem.com) - Get testnet L-BTC, USDt, and LCAD  
 - [Liquid.beer Demo](https://liquid.beer/) - Demo assets and testing platform  
 - [Liquid Testnet Portal](https://liquidtestnet.com/) - Testnet development environment
+- [lt4](https://kitchen.anyone.eu.org/lt4/) - Unofficial liquid testnet based on testnet4 
 
 ## Community 
 - [Liquid Dev telegram](https://t.me/liquid_devel)
