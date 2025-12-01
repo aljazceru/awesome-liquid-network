@@ -75,6 +75,14 @@ A curated list of Liquid Network resources, libraries, tools and applications. L
 - [Liquid Testnet Portal](https://liquidtestnet.com/) - Testnet development environment
 - [lt4](https://kitchen.anyone.eu.org/lt4/) - Unofficial liquid testnet based on testnet4 
 
+## Wallets
+- [Marina](https://github.com/vulpemventures/marina) - Browser extension wallet
+- [Jade](https://blockstream.com/jade/) - Hardware wallet supporting Liquid Network
+- [Green](https://blockstream.com/app/) - Blockstream's Green wallet  
+- [Aqua](https://aquawallet.io/) - Aqua wallet 
+- [Bull Bitcoin](https://wallet.bullbitcoin.com/en) - Bull Bitcoin wallet
+- [SideSwap](https://sideswap.io/) - Wallet for managing assets
+
 ## Community 
 - [Liquid Dev telegram](https://t.me/liquid_devel)
 - [liquid.net community](https://community.liquid.net/home)
