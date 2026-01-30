@@ -61,13 +61,14 @@ A curated list of Liquid Network resources, libraries, tools and applications. L
 - [lwk-llms](./llms/lwk-llms.txt) - context file for building LWK applications with llms
 
 ### Libraries
-- [Libwally-core](https://github.com/ElementsProject/libwally-core)![stars](https://img.shields.io/github/stars/ElementsProject/libwally-core.svg?style=social) - C/C++ library with Python, Java, and JavaScript bindings  
-- [Rust-elements](https://github.com/ElementsProject/rust-elements)![stars](https://img.shields.io/github/stars/ElementsProject/rust-elements.svg?style=social) - Rust implementation for Liquid/Elements  
-- [Rust-liquid-rpc](https://github.com/stevenroose/rust-liquid-rpc)![stars](https://img.shields.io/github/stars/stevenroose/rust-liquid-rpc.svg?style=social) - Rust RPC interface for liquidd  
-- [go-elements](https://github.com/vulpemventures/go-elements)![stars](https://img.shields.io/github/stars/vulpemventures/go-elements.svg?style=social) - Go support for Liquid transactions  
-- [liquidjs-lib](https://github.com/provable-things/liquidjs-lib)![stars](https://img.shields.io/github/stars/provable-things/liquidjs-lib.svg?style=social) - JavaScript library for Liquid Network  
+- [Libwally-core](https://github.com/ElementsProject/libwally-core)![stars](https://img.shields.io/github/stars/ElementsProject/libwally-core.svg?style=social) - C/C++ library with Python, Java, and JavaScript bindings
+- [Rust-elements](https://github.com/ElementsProject/rust-elements)![stars](https://img.shields.io/github/stars/ElementsProject/rust-elements.svg?style=social) - Rust implementation for Liquid/Elements
+- [Rust-liquid-rpc](https://github.com/stevenroose/rust-liquid-rpc)![stars](https://img.shields.io/github/stars/stevenroose/rust-liquid-rpc.svg?style=social) - Rust RPC interface for liquidd
+- [go-elements](https://github.com/vulpemventures/go-elements)![stars](https://img.shields.io/github/stars/vulpemventures/go-elements.svg?style=social) - Go support for Liquid transactions
+- [liquidjs-lib](https://github.com/provable-things/liquidjs-lib)![stars](https://img.shields.io/github/stars/provable-things/liquidjs-lib.svg?style=social) - JavaScript library for Liquid Network
 - [python-elementstx](https://github.com/Simplexum/python-elementstx)![stars](https://img.shields.io/github/stars/Simplexum/python-elementstx.svg?style=social) - Python library for Elements transactions
-- [LWK](https://github.com/blockstream/lwk)![stars](https://img.shields.io/github/stars/blockstream/lwk.svg?style=social) - Rust libraries with bindings in Swift, Kotlin, Python, C#, Dart, React Native, WASM.  
+- [LWK](https://github.com/blockstream/lwk)![stars](https://img.shields.io/github/stars/blockstream/lwk.svg?style=social) - Rust libraries with bindings in Swift, Kotlin, Python, C#, Dart, React Native, WASM.
+- [DLC-link/dlc-btc-lib](https://github.com/DLC-link/dlc-btc-lib) - Comprehensive library for interacting with DLC.Link smart contracts and the Bitcoin blockchain. Includes functions for creating valid Partially Signed Bitcoin Transactions, handling setup, deposit, and withdrawal interactions, and interfacing with Attestors.
 
 ### Testing Resources
 - [Testnet Faucet](https://faucet.vulpem.com) - Get testnet L-BTC, USDt, and LCAD  
