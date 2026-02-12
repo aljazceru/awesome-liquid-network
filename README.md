@@ -50,6 +50,7 @@ A curated list of Liquid Network resources, libraries, tools and applications. L
 - [Liquid swap](https://github.com/Blockstream/liquid-swap/)![stars](https://img.shields.io/github/stars/Blockstream/liquid-swap.svg?style=social) - Swap Issued Assets on the Liquid Network using Confidential Transactions
 - [Liquid.Coach](https://vulpemventures.github.io/liquid.coach) - Browser-based transaction management tool
 - [TDEX](https://tdex.network/) - Trading platform for Liquid Network  
+- [Boltz](https://boltz.exchange/) - Non-custodial swap service supporting Bitcoin, Lightning, and Liquid. Submarine swaps and chain swaps for instant, trustless asset exchanges
 - [Hal](https://github.com/stevenroose/hal/)![stars](https://img.shields.io/github/stars/stevenroose/hal.svg?style=social) - Transaction debugging and creation tool with [hal elements](https://github.com/stevenroose/hal-elements/)
 - [Nigiri](https://github.com/vulpemventures/nigiri)![stars](https://img.shields.io/github/stars/vulpemventures/nigiri.svg?style=social) - Docker development environment for Bitcoin, Lightning and Liquid  
 - [Liquid-melt](https://github.com/Blockstream/liquid-melt)![stars](https://img.shields.io/github/stars/Blockstream/liquid-melt.svg?style=social) - Tool for importing collectible tokens  
@@ -81,6 +82,7 @@ A curated list of Liquid Network resources, libraries, tools and applications. L
 - [Jade](https://blockstream.com/jade/) - Hardware wallet supporting Liquid Network
 - [Green](https://blockstream.com/app/) - Blockstream's Green wallet  
 - [Aqua](https://aquawallet.io/) - Aqua wallet 
+- [Anya Wallet](https://github.com/Conxian/anya-mobile) - Multi-layer Bitcoin wallet with native support for L1, Lightning Network, Liquid, and Stacks. Features unified balance view and advanced privacy options
 - [Bull Bitcoin](https://wallet.bullbitcoin.com/en) - Bull Bitcoin wallet
 - [SideSwap](https://sideswap.io/) - Wallet for managing assets
 
