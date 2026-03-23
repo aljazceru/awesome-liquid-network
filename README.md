@@ -59,9 +59,14 @@ A curated list of Liquid Network resources, libraries, tools and applications. L
 - [Jade Wallet](https://github.com/Blockstream/Jade)![stars](https://img.shields.io/github/stars/Blockstream/Jade.svg?style=social) - Hardware wallet implementation
 - [LiquiDEX](https://github.com/RCasatta/LiquiDEX)![stars](https://img.shields.io/github/stars/RCasatta/LiquiDEX.svg?style=social) - Decentralized exchange framework
 - [BreezSDK](https://sdk-doc-liquid.breez.technology/) - Breez Liquid sdk for "nodeless" lightning payments
+- [boltz-backend](https://github.com/BoltzExchange/boltz-backend)![stars](https://img.shields.io/github/stars/BoltzExchange/boltz-backend.svg?style=social) - Backend for Boltz submarine swaps (supports Liquid Network)
+- [covclaim](https://github.com/BoltzExchange/covclaim)![stars](https://img.shields.io/github/stars/BoltzExchange/covclaim.svg?style=social) - Watch the Liquid sidechain and enforce Boltz swaps via covenants
+- [AutoLiquid](https://github.com/aeonBTC/AutoLiquid)![stars](https://img.shields.io/github/stars/aeonBTC/AutoLiquid.svg?style=social) - Bitcoin to Liquid Network Peg-in Automation
+- [ark-escrow](https://github.com/Antisys/ark-escrow)![stars](https://img.shields.io/github/stars/Antisys/ark-escrow.svg?style=social) - Non-custodial escrow on Liquid with Lightning funding
+- [ChainBridge-Swap](https://github.com/diorwave/ChainBridge-Swap)![stars](https://img.shields.io/github/stars/diorwave/ChainBridge-Swap.svg?style=social) - Web-based atomic swap platform for Bitcoin and Liquid Network tokens using HTLC contracts
+- [samplicity](https://github.com/gmikeska/samplicity)![stars](https://img.shields.io/github/stars/gmikeska/samplicity.svg?style=social) - Web app for deploying Simplicity-based P2PKH addresses on Elements/Liquid networks
+- [Blitz POS](https://github.com/BlitzWallet/blitz-wallet-pos)![stars](https://img.shields.io/github/stars/BlitzWallet/blitz-wallet-pos.svg?style=social) - Point-of-sale online platform for receiving Bitcoin (with Liquid support)
 
-### LLMS
-- [lwk-llms](./llms/lwk-llms.txt) - context file for building LWK applications with llms
 
 ### Libraries
 - [Libwally-core](https://github.com/ElementsProject/libwally-core)![stars](https://img.shields.io/github/stars/ElementsProject/libwally-core.svg?style=social) - C/C++ library with Python, Java, and JavaScript bindings
@@ -72,6 +77,8 @@ A curated list of Liquid Network resources, libraries, tools and applications. L
 - [python-elementstx](https://github.com/Simplexum/python-elementstx)![stars](https://img.shields.io/github/stars/Simplexum/python-elementstx.svg?style=social) - Python library for Elements transactions
 - [LWK](https://github.com/blockstream/lwk)![stars](https://img.shields.io/github/stars/blockstream/lwk.svg?style=social) - Rust libraries with bindings in Swift, Kotlin, Python, C#, Dart, React Native, WASM.
 - [Smplx](https://github.com/BlockstreamResearch/smplx)![stars](https://img.shields.io/github/stars/BlockstreamResearch/smplx.svg?style=social) - Fast, ux-first simplicity development framework in Rust 
+- [lwk-dart](https://github.com/SatoshiPortal/lwk-dart)![stars](https://img.shields.io/github/stars/SatoshiPortal/lwk-dart.svg?style=social) - Dart/Flutter bindings for Blockstream's Liquid Wallet Kit
+- [simplicity](https://github.com/hazbase/simplicity)![stars](https://img.shields.io/github/stars/hazbase/simplicity.svg?style=social) -Typescript SDK for Simplicity on Liquid by hazbase
 
 ### Testing Resources
 - [Testnet Faucet](https://faucet.vulpem.com) - Get testnet L-BTC, USDt, and LCAD  
@@ -86,6 +93,8 @@ A curated list of Liquid Network resources, libraries, tools and applications. L
 - [Aqua](https://aquawallet.io/) - Aqua wallet 
 - [Bull Bitcoin](https://wallet.bullbitcoin.com/en) - Bull Bitcoin wallet
 - [SideSwap](https://sideswap.io/) - Wallet for managing assets
+- [IbisWallet](https://github.com/aeonBTC/IbisWallet)![stars](https://img.shields.io/github/stars/aeonBTC/IbisWallet.svg?style=social) - Android Bitcoin wallet with Liquid Network support
+- [Anser](https://github.com/riccardobl/anser-liquid)![stars](https://img.shields.io/github/stars/riccardobl/anser-liquid.svg?style=social) - Client-side web app using Alby extension for Liquid Network
 
 ## Community 
 - [Liquid Dev telegram](https://t.me/liquid_devel)
