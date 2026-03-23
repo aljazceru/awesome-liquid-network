@@ -35,6 +35,7 @@ A curated list of Liquid Network resources, libraries, tools and applications. L
 ## Liquid Network Asset
 #### Mainnet
 - [Asset Registry JSON](https://assets.blockstream.info/) - Official Blockstream asset registry
+- [anchor](https://github.com/0ceanSlim/anchor)![stars](https://img.shields.io/github/stars/0ceanSlim/anchor.svg?style=social) - Immutable, permissionless constant-product AMM for Liquid
 - [Production Assets List](https://blockstream.info/liquid/assets) - Human-readable list of all assets
 - [Blockstream AMP](https://blockstream.com/amp/) - Asset management platform for institutions
 - [AMP Documentation](https://docs.blockstream.com/blockstream-amp/overview.html) - Technical documentation for Blockstream AMP
