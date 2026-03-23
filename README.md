@@ -46,7 +46,7 @@ A curated list of Liquid Network resources, libraries, tools and applications. L
 - [Testnet explorer](https://liquidtestnet.com/explorer) - Testnet explorer for liquid network
 
 ## Development Tools
-
+- [deadcat](https://github.com/Resolvr-io/deadcat) - prediction markets implemented on liquid network
 - [Liquid swap](https://github.com/Blockstream/liquid-swap/)![stars](https://img.shields.io/github/stars/Blockstream/liquid-swap.svg?style=social) - Swap Issued Assets on the Liquid Network using Confidential Transactions
 - [Liquid.Coach](https://vulpemventures.github.io/liquid.coach) - Browser-based transaction management tool
 - [TDEX](https://tdex.network/) - Trading platform for Liquid Network  
