@@ -26,6 +26,7 @@ A curated list of Liquid Network resources, libraries, tools and applications. L
 ## Explorers
 - [Blockstream Explorer](https://blockstream.info/liquid/) - Official block explorer for Liquid Network
 - [Liquid.network](https://liquid.network/) - Mempool.space liquid network explorer
+- [electrs-liquid-umbrel](https://github.com/4rkad/electrs-liquid-umbrel)![stars](https://img.shields.io/github/stars/4rkad/electrs-liquid-umbrel.svg?style=social) - Electrum server for the Liquid Network — Umbrel community app
 
 ## Network 
 - [Liquid.net Statistics](https://liquid.net/) - Network statistics and monitoring dashboard  
@@ -46,7 +47,8 @@ A curated list of Liquid Network resources, libraries, tools and applications. L
 - [Testnet explorer](https://liquidtestnet.com/explorer) - Testnet explorer for liquid network
 
 ## Development Tools
-- [deadcat](https://github.com/Resolvr-io/deadcat) - prediction markets implemented on liquid network
+- [aqua-mcp](https://github.com/jan3dev/aqua-mcp)![stars](https://img.shields.io/github/stars/jan3dev/aqua-mcp.svg?style=social) - MCP Server to manage assets in Liquid Network
+- [deadcat](https://github.com/Resolvr-io/deadcat)![stars](https://img.shields.io/github/stars/Resolvr-io/deadcat.svg?style=social) - prediction markets implemented on liquid network
 - [Liquid swap](https://github.com/Blockstream/liquid-swap/)![stars](https://img.shields.io/github/stars/Blockstream/liquid-swap.svg?style=social) - Swap Issued Assets on the Liquid Network using Confidential Transactions
 - [Liquid.Coach](https://vulpemventures.github.io/liquid.coach) - Browser-based transaction management tool
 - [TDEX](https://tdex.network/) - Trading platform for Liquid Network  
@@ -68,7 +70,7 @@ A curated list of Liquid Network resources, libraries, tools and applications. L
 - [liquidjs-lib](https://github.com/provable-things/liquidjs-lib)![stars](https://img.shields.io/github/stars/provable-things/liquidjs-lib.svg?style=social) - JavaScript library for Liquid Network
 - [python-elementstx](https://github.com/Simplexum/python-elementstx)![stars](https://img.shields.io/github/stars/Simplexum/python-elementstx.svg?style=social) - Python library for Elements transactions
 - [LWK](https://github.com/blockstream/lwk)![stars](https://img.shields.io/github/stars/blockstream/lwk.svg?style=social) - Rust libraries with bindings in Swift, Kotlin, Python, C#, Dart, React Native, WASM.
-- [DLC-link/dlc-btc-lib](https://github.com/DLC-link/dlc-btc-lib) - Comprehensive library for interacting with DLC.Link smart contracts and the Bitcoin blockchain. Includes functions for creating valid Partially Signed Bitcoin Transactions, handling setup, deposit, and withdrawal interactions, and interfacing with Attestors.
+- [Smplx](https://github.com/BlockstreamResearch/smplx)![stars](https://img.shields.io/github/stars/BlockstreamResearch/smplx.svg?style=social) - Fast, ux-first simplicity development framework in Rust 
 
 ### Testing Resources
 - [Testnet Faucet](https://faucet.vulpem.com) - Get testnet L-BTC, USDt, and LCAD  
