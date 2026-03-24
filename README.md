@@ -27,10 +27,12 @@ A curated list of Liquid Network resources, libraries, tools and applications. L
 - [Blockstream Explorer](https://blockstream.info/liquid/) - Official block explorer for Liquid Network
 - [Liquid.network](https://liquid.network/) - Mempool.space liquid network explorer
 - [electrs-liquid-umbrel](https://github.com/4rkad/electrs-liquid-umbrel)![stars](https://img.shields.io/github/stars/4rkad/electrs-liquid-umbrel.svg?style=social) - Electrum server for the Liquid Network — Umbrel community app
+- [Enciclopedia](https://github.com/lvaccaro/enciclopedia-rust) - Web-based asset information explorer for the Liquid Network
 
 ## Network 
 - [Liquid.net Statistics](https://liquid.net/) - Network statistics and monitoring dashboard  
 - [Liquid.horse](https://liquid.horse/) - Comprehensive sidechain statistics  
+- [LiquidLink](https://github.com/kev-kelv/LiquidLink) - Liquid Network ↔ Stacks liquidity bridge — moves L-BTC into Stacks DeFi with confidential transaction support
 
 ## Liquid Network Asset
 #### Mainnet
@@ -66,6 +68,9 @@ A curated list of Liquid Network resources, libraries, tools and applications. L
 - [ChainBridge-Swap](https://github.com/diorwave/ChainBridge-Swap)![stars](https://img.shields.io/github/stars/diorwave/ChainBridge-Swap.svg?style=social) - Web-based atomic swap platform for Bitcoin and Liquid Network tokens using HTLC contracts
 - [samplicity](https://github.com/gmikeska/samplicity)![stars](https://img.shields.io/github/stars/gmikeska/samplicity.svg?style=social) - Web app for deploying Simplicity-based P2PKH addresses on Elements/Liquid networks
 - [Blitz POS](https://github.com/BlitzWallet/blitz-wallet-pos)![stars](https://img.shields.io/github/stars/BlitzWallet/blitz-wallet-pos.svg?style=social) - Point-of-sale online platform for receiving Bitcoin (with Liquid support)
+- [LiquidBridge](https://github.com/soluiris/LiquidBridge) - Cross-chain AMM for synthetic swapping of Liquid Network BTC against STX and Stacks-native assets
+- [liquid-recovery](https://github.com/PraneethGunas/liquid-recovery) - BIP39 mnemonic recovery tool for Liquid Network using a local Elements node
+- [simplicity-attestation](https://github.com/brunocapelao/simplicity-attestation) - On-chain certificate system with hierarchical delegation using Simplicity on Liquid Network
 
 
 ### Libraries
@@ -79,6 +84,7 @@ A curated list of Liquid Network resources, libraries, tools and applications. L
 - [Smplx](https://github.com/BlockstreamResearch/smplx)![stars](https://img.shields.io/github/stars/BlockstreamResearch/smplx.svg?style=social) - Fast, ux-first simplicity development framework in Rust 
 - [lwk-dart](https://github.com/SatoshiPortal/lwk-dart)![stars](https://img.shields.io/github/stars/SatoshiPortal/lwk-dart.svg?style=social) - Dart/Flutter bindings for Blockstream's Liquid Wallet Kit
 - [simplicity](https://github.com/hazbase/simplicity)![stars](https://img.shields.io/github/stars/hazbase/simplicity.svg?style=social) -Typescript SDK for Simplicity on Liquid by hazbase
+- [secp256k1-zkp](https://github.com/BlockstreamResearch/secp256k1-zkp)![stars](https://img.shields.io/github/stars/BlockstreamResearch/secp256k1-zkp.svg?style=social) - A fork of libsecp256k1 with support for advanced features such as Confidential Assets and MuSig2
 
 ### Testing Resources
 - [Testnet Faucet](https://faucet.vulpem.com) - Get testnet L-BTC, USDt, and LCAD  
