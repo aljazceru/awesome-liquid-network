@@ -14,6 +14,7 @@ A curated list of Liquid Network resources, libraries, tools and applications. L
 - [Liquid Network Website](https://blockstream.com/liquid/) - Official Liquid Network platform by Blockstream  
 - [Technical Documentation](https://docs.blockstream.com/liquid/technical_overview.html) - Comprehensive technical overview and specifications  
 - [Strong Federations Whitepaper](https://blockstream.com/assets/downloads/strong-federations.pdf) - Technical whitepaper explaining Liquid Network architecture
+- [ELIPs](https://github.com/ElementsProject/elips)![stars](https://img.shields.io/github/stars/ElementsProject/elips.svg?style=social) - Ethereum Improvement Proposals-style proposals for Liquid Network standards
 
 ## Documentation & Guides
 - [Getting Started with Liquid Network](https://hackernoon.com/getting-started-with-the-liquid-network-c87e2cb5996b) - Beginner's guide to understanding and using Liquid  
@@ -33,6 +34,8 @@ A curated list of Liquid Network resources, libraries, tools and applications. L
 - [Liquid.net Statistics](https://liquid.net/) - Network statistics and monitoring dashboard  
 - [Liquid.horse](https://liquid.horse/) - Comprehensive sidechain statistics  
 - [LiquidLink](https://github.com/kev-kelv/LiquidLink) - Liquid Network ↔ Stacks liquidity bridge — moves L-BTC into Stacks DeFi with confidential transaction support
+- [lwk](https://github.com/Blockstream/lwk)![stars](https://img.shields.io/github/stars/Blockstream/lwk.svg?style=social) - Liquid Wallet Kit: libraries and tools for building Liquid apps
+- [peerswap](https://github.com/ElementsProject/peerswap)![stars](https://img.shields.io/github/stars/ElementsProject/peerswap.svg?style=social) - Submarine swap implementation for Liquid Network
 
 ## Liquid Network Asset
 #### Mainnet
@@ -41,6 +44,9 @@ A curated list of Liquid Network resources, libraries, tools and applications. L
 - [Production Assets List](https://blockstream.info/liquid/assets) - Human-readable list of all assets
 - [Blockstream AMP](https://blockstream.com/amp/) - Asset management platform for institutions
 - [AMP Documentation](https://docs.blockstream.com/blockstream-amp/overview.html) - Technical documentation for Blockstream AMP
+- [cln-application](https://github.com/ElementsProject/cln-application)![stars](https://img.shields.io/github/stars/ElementsProject/cln-application.svg?style=social) - Core Lightning application for Liquid Network
+- [nanopos](https://github.com/ElementsProject/nanopos)![stars](https://img.shields.io/github/stars/ElementsProject/nanopos.svg?style=social) - Point of sale system for Liquid Network
+- [filebazaar](https://github.com/ElementsProject/filebazaar)![stars](https://img.shields.io/github/stars/ElementsProject/filebazaar.svg?style=social) - Sell files for Bitcoin/Liquid via Lightning
 
 #### Testnet
 - [Testnet Asset Registry](https://assets-testnet.blockstream.info/) - Asset registry for testnet
@@ -71,6 +77,8 @@ A curated list of Liquid Network resources, libraries, tools and applications. L
 - [LiquidBridge](https://github.com/soluiris/LiquidBridge) - Cross-chain AMM for synthetic swapping of Liquid Network BTC against STX and Stacks-native assets
 - [liquid-recovery](https://github.com/PraneethGunas/liquid-recovery) - BIP39 mnemonic recovery tool for Liquid Network using a local Elements node
 - [simplicity-attestation](https://github.com/brunocapelao/simplicity-attestation) - On-chain certificate system with hierarchical delegation using Simplicity on Liquid Network
+- [simplicity-dex](https://github.com/Blockstream/simplicity-dex)![stars](https://img.shields.io/github/stars/Blockstream/simplicity-dex.svg?style=social) - Decentralized exchange built with Simplicity smart contracts
+- [boltz-web-app](https://github.com/BoltzExchange/boltz-web-app)![stars](https://img.shields.io/github/stars/BoltzExchange/boltz-web-app.svg?style=social) - Web interface for Boltz submarine swaps
 
 
 ### Libraries
