@@ -116,6 +116,15 @@ To explore other aspects of freedom tech ecosystem, check out these additional r
 - [ungovernable.tech](https://ungovernable.tech) - A collection of resources on encryption, privacy tools, and decentralized technologies
 - [lightning-network.tech](https://www.lightning-network.tech/)  - Essential tools, guides, and communities for Bitcoin Lightning Network node operators.
 
+## Additional Resources
+- [peerswap](https://github.com/ElementsProject/peerswap)![stars](https://img.shields.io/github/stars/ElementsProject/peerswap.svg?style=social) - Swap between Lightning Network and Liquid
+- [nanopos](https://github.com/ElementsProject/nanopos)![stars](https://img.shields.io/github/stars/ElementsProject/nanopos.svg?style=social) - Nano Point of Sale for Liquid Network
+- [filebazaar](https://github.com/ElementsProject/filebazaar)![stars](https://img.shields.io/github/stars/ElementsProject/filebazaar.svg?style=social) - File vending via the Liquid Network
+- [boltz-web-app](https://github.com/BoltzExchange/boltz-web-app)![stars](https://img.shields.io/github/stars/BoltzExchange/boltz-web-app.svg?style=social) - Web interface for Boltz submarine swaps
+- [ELIPs](https://github.com/ElementsProject/ELIPs)![stars](https://img.shields.io/github/stars/ElementsProject/ELIPs.svg?style=social) - Liquid Improvement Proposals
+- [cln-application](https://github.com/ElementsProject/cln-application)![stars](https://img.shields.io/github/stars/ElementsProject/cln-application.svg?style=social) - Core Lightning application templates
+- [simplicity-dex](https://github.com/ElementsProject/simplicity-dex)![stars](https://img.shields.io/github/stars/ElementsProject/simplicity-dex.svg?style=social) - Decentralized exchange using Simplicity
+
 ## Contributing
 
 If you'd like to add something to this list, please submit a [Pull Request on GitHub](https://github.com/aljazceru/awesome-liquid-network).
