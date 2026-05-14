@@ -28,6 +28,14 @@ A curated list of Liquid Network resources, libraries, tools and applications. L
 - [Liquid.network](https://liquid.network/) - Mempool.space liquid network explorer
 - [electrs-liquid-umbrel](https://github.com/4rkad/electrs-liquid-umbrel)![stars](https://img.shields.io/github/stars/4rkad/electrs-liquid-umbrel.svg?style=social) - Electrum server for the Liquid Network — Umbrel community app
 - [Enciclopedia](https://github.com/lvaccaro/enciclopedia-rust) - Web-based asset information explorer for the Liquid Network
+- [elementsproject.github.io](https://github.com/ElementsProject/elementsproject.github.io)![stars](https://img.shields.io/github/stars/ElementsProject/elementsproject.github.io.svg?style=social) - Elements is an open source, sidechain-capable blockchain platform, with powerful features such as Confidential Transactions and Issued Assets. (34★)
+- [elementsproject.github.io](https://github.com/ElementsProject/elementsproject.github.io)![stars](https://img.shields.io/github/stars/ElementsProject/elementsproject.github.io.svg?style=social) - Elements is an open source, sidechain-capable blockchain platform, with powerful features such as Confidential Transactions and Issued Assets. (34★)
+- [rust-bitcoin](https://github.com/Blockstream/rust-bitcoin)![stars](https://img.shields.io/github/stars/Blockstream/rust-bitcoin.svg?style=social) - Rust Bitcoin library (1★)
+- [rust-elements](https://github.com/Blockstream/rust-elements)![stars](https://img.shields.io/github/stars/Blockstream/rust-elements.svg?style=social) - Lightning Network project (0★)
+- [rust-miniscript](https://github.com/Blockstream/rust-miniscript)![stars](https://img.shields.io/github/stars/Blockstream/rust-miniscript.svg?style=social) - Lightning Network project (0★)
+- [rust-secp256k1-zkp](https://github.com/Blockstream/rust-secp256k1-zkp)![stars](https://img.shields.io/github/stars/Blockstream/rust-secp256k1-zkp.svg?style=social) - Lightning Network project (0★)
+- [corepc](https://github.com/Blockstream/corepc)![stars](https://img.shields.io/github/stars/Blockstream/corepc.svg?style=social) - Lightning Network project (0★)
+- [elementsproject.github.io](https://github.com/ElementsProject/elementsproject.github.io)![stars](https://img.shields.io/github/stars/ElementsProject/elementsproject.github.io.svg?style=social) - Elements is an open source, sidechain-capable blockchain platform, with powerful features such as Confidential Transactions and Issued Assets. (34★)
 
 ## Network 
 - [Liquid.net Statistics](https://liquid.net/) - Network statistics and monitoring dashboard  
