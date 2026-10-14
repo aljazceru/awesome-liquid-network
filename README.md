@@ -20,12 +20,14 @@ This list tracks wallets, libraries, asset platforms, and tools in the Liquid ec
 - [Testing Resources](#testing-resources)
 
 ## Official Resources
+_Last verified: 2026-10-14._
 - [Official Software Releases](https://github.com/ElementsProject/elements/releases) - GitHub repository containing official binaries and source code  
 - [Liquid Network Website](https://blockstream.com/liquid/) - Official Liquid Network platform by Blockstream  
 - [Technical Documentation](https://docs.blockstream.com/liquid/technical_overview.html) - Comprehensive technical overview and specifications  
 - [Strong Federations Whitepaper](https://blockstream.com/assets/downloads/strong-federations.pdf) - Technical whitepaper explaining Liquid Network architecture
 
 ## Documentation & Guides
+_Last verified: 2026-10-14._
 - [Getting Started with Liquid Network](https://hackernoon.com/getting-started-with-the-liquid-network-c87e2cb5996b) - Beginner's guide to understanding and using Liquid  
 - [Asset Labeling Guide](https://medium.com/@gabriele.domenichini/liquid-daemon-3-14-1-23-and-labels-8ad1c06bb93e) - How to properly label assets on Liquid Network  
 - [Hardware Node Setup](https://liquid.beer/pub) - Guide for setting up a Liquid Network hardware node  
@@ -34,17 +36,20 @@ This list tracks wallets, libraries, asset platforms, and tools in the Liquid ec
 - [Liquid Multisig Guide](https://github.com/Blockstream/liquid_multisig_issuance) - Documentation for implementing multisig issuance
 
 ## Explorers
+_Last verified: 2026-10-14._
 - [Blockstream Explorer](https://blockstream.info/liquid/) - Official block explorer for Liquid Network
 - [Liquid.network](https://liquid.network/) - Mempool.space liquid network explorer
 - [electrs-liquid-umbrel](https://github.com/4rkad/electrs-liquid-umbrel)![stars](https://img.shields.io/github/stars/4rkad/electrs-liquid-umbrel.svg?style=social) - Electrum server for the Liquid Network — Umbrel community app
 - [Enciclopedia](https://github.com/lvaccaro/enciclopedia-rust) - Web-based asset information explorer for the Liquid Network
 
 ## Network 
+_Last verified: 2026-10-14._
 - [Liquid.net Statistics](https://liquid.net/) - Network statistics and monitoring dashboard  
 - [Liquid.horse](https://liquid.horse/) - Comprehensive sidechain statistics  
 - [LiquidLink](https://github.com/kev-kelv/LiquidLink) - Liquid Network ↔ Stacks liquidity bridge — moves L-BTC into Stacks DeFi with confidential transaction support
 
 ## Liquid Network Asset
+_Last verified: 2026-10-14._
 #### Mainnet
 - [Asset Registry JSON](https://assets.blockstream.info/) - Official Blockstream asset registry
 - [anchor](https://github.com/0ceanSlim/anchor)![stars](https://img.shields.io/github/stars/0ceanSlim/anchor.svg?style=social) - Immutable, permissionless constant-product AMM for Liquid
@@ -60,6 +65,7 @@ This list tracks wallets, libraries, asset platforms, and tools in the Liquid ec
 - [Testnet explorer](https://liquidtestnet.com/explorer) - Testnet explorer for liquid network
 
 ## Development Tools
+_Last verified: 2026-10-14._
 - [aqua-mcp](https://github.com/jan3dev/aqua-mcp)![stars](https://img.shields.io/github/stars/jan3dev/aqua-mcp.svg?style=social) - MCP Server to manage assets in Liquid Network
 - [deadcat](https://github.com/Resolvr-io/deadcat)![stars](https://img.shields.io/github/stars/Resolvr-io/deadcat.svg?style=social) - prediction markets implemented on liquid network
 - [Liquid swap](https://github.com/Blockstream/liquid-swap/)![stars](https://img.shields.io/github/stars/Blockstream/liquid-swap.svg?style=social) - Swap Issued Assets on the Liquid Network using Confidential Transactions
@@ -84,6 +90,7 @@ This list tracks wallets, libraries, asset platforms, and tools in the Liquid ec
 
 
 ### Libraries
+_Last verified: 2026-10-14._
 - [Libwally-core](https://github.com/ElementsProject/libwally-core)![stars](https://img.shields.io/github/stars/ElementsProject/libwally-core.svg?style=social) - C/C++ library with Python, Java, and JavaScript bindings
 - [Rust-elements](https://github.com/ElementsProject/rust-elements)![stars](https://img.shields.io/github/stars/ElementsProject/rust-elements.svg?style=social) - Rust implementation for Liquid/Elements
 - [Rust-liquid-rpc](https://github.com/stevenroose/rust-liquid-rpc)![stars](https://img.shields.io/github/stars/stevenroose/rust-liquid-rpc.svg?style=social) - Rust RPC interface for liquidd
@@ -97,12 +104,14 @@ This list tracks wallets, libraries, asset platforms, and tools in the Liquid ec
 - [secp256k1-zkp](https://github.com/BlockstreamResearch/secp256k1-zkp)![stars](https://img.shields.io/github/stars/BlockstreamResearch/secp256k1-zkp.svg?style=social) - A fork of libsecp256k1 with support for advanced features such as Confidential Assets and MuSig2
 
 ### Testing Resources
+_Last verified: 2026-10-14._
 - [Testnet Faucet](https://faucet.vulpem.com) - Get testnet L-BTC, USDt, and LCAD  
 - [Liquid.beer Demo](https://liquid.beer/) - Demo assets and testing platform  
 - [Liquid Testnet Portal](https://liquidtestnet.com/) - Testnet development environment
 - [lt4](https://kitchen.anyone.eu.org/lt4/) - Unofficial liquid testnet based on testnet4 
 
 ## Wallets
+_Last verified: 2026-10-14._
 - [Marina](https://github.com/vulpemventures/marina) - Browser extension wallet
 - [Jade](https://blockstream.com/jade/) - Hardware wallet supporting Liquid Network
 - [Green](https://blockstream.com/app/) - Blockstream's Green wallet  
@@ -113,10 +122,12 @@ This list tracks wallets, libraries, asset platforms, and tools in the Liquid ec
 - [Anser](https://github.com/riccardobl/anser-liquid)![stars](https://img.shields.io/github/stars/riccardobl/anser-liquid.svg?style=social) - Client-side web app using Alby extension for Liquid Network
 
 ## Community 
+_Last verified: 2026-10-14._
 - [Liquid Dev telegram](https://t.me/liquid_devel)
 - [liquid.net community](https://community.liquid.net/home)
 
 ## Related Resources
+_Last verified: 2026-10-14._
 
 To explore other aspects of freedom tech ecosystem, check out these additional resource directories:
 - [nostr.net](https://www.nostr.net) - A complete guide to Nostr, including projects, implementations, developer tools and all other resources
