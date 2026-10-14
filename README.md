@@ -2,7 +2,7 @@ A curated list of Liquid Network resources, libraries, tools and applications. L
 
 ## What is the Liquid Network?
 
-The Liquid Network is a Bitcoin sidechain operated by a federation of functionaries. It enables faster settlement (2-minute blocks vs Bitcoin's 10-minute), confidential transactions (amounts and asset types are blinded), and the issuance of custom tokens pegged to LBTC. It's run by Blockstream and partner exchanges; trust is distributed across the federation rather than a single operator.
+The Liquid Network is a Bitcoin sidechain operated by a federation of functionaries. It enables faster settlement (2-minute blocks vs Bitcoin's 10-minute), confidential transactions (amounts and asset types are blinded), and supports issuing custom assets; L-BTC is the 1:1 BTC-pegged asset. It's run by Blockstream and partner exchanges; trust is distributed across the federation rather than a single operator.
 
 ## Where to start
 
