@@ -4,7 +4,7 @@ plugins:
 - jekyll-seo-tag
 
 title: Liquid Network Directory
-description: A curated list of Liquid Network resources, libraries, tools and applications. Liquid Network is a Bitcoin sidechain for faster settlement, confidential transactions, and asset issuance.
+description: "A curated list of Liquid Network resources, libraries, tools and applications. Liquid Network is a Bitcoin sidechain for faster settlement, confidential transactions, and asset issuance."
 author: aljaz
 lang: en
 baseurl: ""
