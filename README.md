@@ -1,5 +1,15 @@
 A curated list of Liquid Network resources, libraries, tools and applications. Liquid Network is a Bitcoin layer-2 (technically sidechain) enabling the issuance of security tokens and other digital assets.
 
+## What is the Liquid Network?
+
+The Liquid Network is a Bitcoin sidechain operated by a federation of functionaries. It enables faster settlement (2-minute blocks vs Bitcoin's 10-minute), confidential transactions (amounts and asset types are blinded), and the issuance of custom tokens pegged to LBTC. It's run by Blockstream and partner exchanges; trust is distributed across the federation rather than a single operator.
+
+## Where to start
+
+Start with the [official Liquid documentation](https://docs.liquid.net/) and the [Elements project](https://elementsproject.org/), since Liquid is built on top of Elements. If you're issuing an asset, the [Liquid Asset Issuance guide](https://docs.liquid.net/docs/issuance) is the canonical reference. For development, the [Liquid Wallet Kit (LWK)](https://github.com/Blockstream/lwk) gives you a Rust/WASM toolkit for Liquid wallets without needing to run a full node.
+
+This list tracks wallets, libraries, asset platforms, and tools in the Liquid ecosystem.
+
 ## Contents
 - [Official Resources](#official-resources)
 - [Documentation & Guides](#documentation--guides)
