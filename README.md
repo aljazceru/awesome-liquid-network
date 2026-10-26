@@ -81,6 +81,7 @@ This list tracks wallets, libraries, asset platforms, and tools in the Liquid ec
 - [LiquidBridge](https://github.com/soluiris/LiquidBridge) - Cross-chain AMM for synthetic swapping of Liquid Network BTC against STX and Stacks-native assets
 - [liquid-recovery](https://github.com/PraneethGunas/liquid-recovery) - BIP39 mnemonic recovery tool for Liquid Network using a local Elements node
 - [simplicity-attestation](https://github.com/brunocapelao/simplicity-attestation) - On-chain certificate system with hierarchical delegation using Simplicity on Liquid Network
+- [price-oracle](https://github.com/BlockstreamResearch/price-oracle)![stars](https://img.shields.io/github/stars/BlockstreamResearch/price-oracle.svg?style=social) - Federated price oracle for the Liquid Network, enforced by Simplicity covenants.
 
 
 ### Libraries
@@ -95,6 +96,8 @@ This list tracks wallets, libraries, asset platforms, and tools in the Liquid ec
 - [lwk-dart](https://github.com/SatoshiPortal/lwk-dart)![stars](https://img.shields.io/github/stars/SatoshiPortal/lwk-dart.svg?style=social) - Dart/Flutter bindings for Blockstream's Liquid Wallet Kit
 - [simplicity](https://github.com/hazbase/simplicity)![stars](https://img.shields.io/github/stars/hazbase/simplicity.svg?style=social) -Typescript SDK for Simplicity on Liquid by hazbase
 - [secp256k1-zkp](https://github.com/BlockstreamResearch/secp256k1-zkp)![stars](https://img.shields.io/github/stars/BlockstreamResearch/secp256k1-zkp.svg?style=social) - A fork of libsecp256k1 with support for advanced features such as Confidential Assets and MuSig2
+- [rust-simplicity](https://github.com/BlockstreamResearch/rust-simplicity)![stars](https://img.shields.io/github/stars/BlockstreamResearch/rust-simplicity.svg?style=social) - Rust library for constructing and analyzing Simplicity programs on Liquid.
+- [SimplicityHL](https://github.com/BlockstreamResearch/SimplicityHL)![stars](https://img.shields.io/github/stars/BlockstreamResearch/SimplicityHL.svg?style=social) - High-level language that compiles to Simplicity bytecode.
 
 ### Testing Resources
 - [Testnet Faucet](https://faucet.vulpem.com) - Get testnet L-BTC, USDt, and LCAD  
