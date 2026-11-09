@@ -82,6 +82,8 @@ This list tracks wallets, libraries, asset platforms, and tools in the Liquid ec
 - [liquid-recovery](https://github.com/PraneethGunas/liquid-recovery) - BIP39 mnemonic recovery tool for Liquid Network using a local Elements node
 - [simplicity-attestation](https://github.com/brunocapelao/simplicity-attestation) - On-chain certificate system with hierarchical delegation using Simplicity on Liquid Network
 - [price-oracle](https://github.com/BlockstreamResearch/price-oracle)![stars](https://img.shields.io/github/stars/BlockstreamResearch/price-oracle.svg?style=social) - Federated price oracle for the Liquid Network, enforced by Simplicity covenants.
+- [simplicity-contracts](https://github.com/BlockstreamResearch/simplicity-contracts)![stars](https://img.shields.io/github/stars/BlockstreamResearch/simplicity-contracts.svg?style=social) - SimplicityHL contracts examples — reference implementations for SimplicityHL contracts on Elements/Liquid.
+- [simplicity-lending](https://github.com/BlockstreamResearch/simplicity-lending)![stars](https://img.shields.io/github/stars/BlockstreamResearch/simplicity-lending.svg?style=social) - A minimal p2p lending protocol written in SimplicityHL.
 
 
 ### Libraries
@@ -98,6 +100,7 @@ This list tracks wallets, libraries, asset platforms, and tools in the Liquid ec
 - [secp256k1-zkp](https://github.com/BlockstreamResearch/secp256k1-zkp)![stars](https://img.shields.io/github/stars/BlockstreamResearch/secp256k1-zkp.svg?style=social) - A fork of libsecp256k1 with support for advanced features such as Confidential Assets and MuSig2
 - [rust-simplicity](https://github.com/BlockstreamResearch/rust-simplicity)![stars](https://img.shields.io/github/stars/BlockstreamResearch/rust-simplicity.svg?style=social) - Rust library for constructing and analyzing Simplicity programs on Liquid.
 - [SimplicityHL](https://github.com/BlockstreamResearch/SimplicityHL)![stars](https://img.shields.io/github/stars/BlockstreamResearch/SimplicityHL.svg?style=social) - High-level language that compiles to Simplicity bytecode.
+- [rust-secp256k1-zkp](https://github.com/BlockstreamResearch/rust-secp256k1-zkp)![stars](https://img.shields.io/github/stars/BlockstreamResearch/rust-secp256k1-zkp.svg?style=social) - Rust bindings for libsecp256k1-zkp — Confidential Assets and MuSig2 primitives powering Liquid.
 
 ### Testing Resources
 - [Testnet Faucet](https://faucet.vulpem.com) - Get testnet L-BTC, USDt, and LCAD  
@@ -114,6 +117,7 @@ This list tracks wallets, libraries, asset platforms, and tools in the Liquid ec
 - [SideSwap](https://sideswap.io/) - Wallet for managing assets
 - [IbisWallet](https://github.com/aeonBTC/IbisWallet)![stars](https://img.shields.io/github/stars/aeonBTC/IbisWallet.svg?style=social) - Android Bitcoin wallet with Liquid Network support
 - [Anser](https://github.com/riccardobl/anser-liquid)![stars](https://img.shields.io/github/stars/riccardobl/anser-liquid.svg?style=social) - Client-side web app using Alby extension for Liquid Network
+- [humid](https://github.com/BlockstreamResearch/humid)![stars](https://img.shields.io/github/stars/BlockstreamResearch/humid.svg?style=social) - Simplicity-first browser extension wallet for Liquid.
 
 ## Community 
 - [Liquid Dev telegram](https://t.me/liquid_devel)
