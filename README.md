@@ -23,7 +23,7 @@ This list tracks wallets, libraries, asset platforms, and tools in the Liquid ec
 - [Official Software Releases](https://github.com/ElementsProject/elements/releases) - GitHub repository containing official binaries and source code  
 - [Liquid Network Website](https://blockstream.com/liquid/) - Official Liquid Network platform by Blockstream  
 - [Technical Documentation](https://docs.blockstream.com/liquid/technical_overview.html) - Comprehensive technical overview and specifications  
-- [Strong Federations Whitepaper](https://blockstream.com/assets/downloads/strong-federations.pdf) - Technical whitepaper explaining Liquid Network architecture
+- [Strong Federations Whitepaper](https://blockstream.com/strong-federations.pdf) - Technical whitepaper explaining Liquid Network architecture
 
 ## Documentation & Guides
 - [Getting Started with Liquid Network](https://hackernoon.com/getting-started-with-the-liquid-network-c87e2cb5996b) - Beginner's guide to understanding and using Liquid  
@@ -50,7 +50,7 @@ This list tracks wallets, libraries, asset platforms, and tools in the Liquid ec
 - [anchor](https://github.com/0ceanSlim/anchor)![stars](https://img.shields.io/github/stars/0ceanSlim/anchor.svg?style=social) - Immutable, permissionless constant-product AMM for Liquid
 - [Production Assets List](https://blockstream.info/liquid/assets) - Human-readable list of all assets
 - [Blockstream AMP](https://blockstream.com/amp/) - Asset management platform for institutions
-- [AMP Documentation](https://docs.blockstream.com/blockstream-amp/overview.html) - Technical documentation for Blockstream AMP
+- [AMP Documentation](https://docs.liquid.net/v1/docs/blockstream-amp-overview) - Technical documentation for Blockstream AMP
 
 #### Testnet
 - [Testnet Asset Registry](https://assets-testnet.blockstream.info/) - Asset registry for testnet
@@ -60,7 +60,6 @@ This list tracks wallets, libraries, asset platforms, and tools in the Liquid ec
 - [Testnet explorer](https://liquidtestnet.com/explorer) - Testnet explorer for liquid network
 
 ## Development Tools
-- [aqua-mcp](https://github.com/jan3dev/aqua-mcp)![stars](https://img.shields.io/github/stars/jan3dev/aqua-mcp.svg?style=social) - MCP Server to manage assets in Liquid Network
 - [deadcat](https://github.com/Resolvr-io/deadcat)![stars](https://img.shields.io/github/stars/Resolvr-io/deadcat.svg?style=social) - prediction markets implemented on liquid network
 - [Liquid swap](https://github.com/Blockstream/liquid-swap/)![stars](https://img.shields.io/github/stars/Blockstream/liquid-swap.svg?style=social) - Swap Issued Assets on the Liquid Network using Confidential Transactions
 - [Liquid.Coach](https://vulpemventures.github.io/liquid.coach) - Browser-based transaction management tool
