@@ -118,6 +118,7 @@ This list tracks wallets, libraries, asset platforms, and tools in the Liquid ec
 - [IbisWallet](https://github.com/aeonBTC/IbisWallet)![stars](https://img.shields.io/github/stars/aeonBTC/IbisWallet.svg?style=social) - Android Bitcoin wallet with Liquid Network support
 - [Anser](https://github.com/riccardobl/anser-liquid)![stars](https://img.shields.io/github/stars/riccardobl/anser-liquid.svg?style=social) - Client-side web app using Alby extension for Liquid Network
 - [humid](https://github.com/BlockstreamResearch/humid)![stars](https://img.shields.io/github/stars/BlockstreamResearch/humid.svg?style=social) - Simplicity-first browser extension wallet for Liquid.
+- [GroupVault](https://groupvault.io) - Multisig custody platform for groups and individuals, with Bitcoin and Liquid vaults, hardware-wallet signing and signer rotation.
 
 ## Community 
 - [Liquid Dev telegram](https://t.me/liquid_devel)
