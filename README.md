@@ -101,6 +101,7 @@ This list tracks wallets, libraries, asset platforms, and tools in the Liquid ec
 - [rust-simplicity](https://github.com/BlockstreamResearch/rust-simplicity)![stars](https://img.shields.io/github/stars/BlockstreamResearch/rust-simplicity.svg?style=social) - Rust library for constructing and analyzing Simplicity programs on Liquid.
 - [SimplicityHL](https://github.com/BlockstreamResearch/SimplicityHL)![stars](https://img.shields.io/github/stars/BlockstreamResearch/SimplicityHL.svg?style=social) - High-level language that compiles to Simplicity bytecode.
 - [rust-secp256k1-zkp](https://github.com/BlockstreamResearch/rust-secp256k1-zkp)![stars](https://img.shields.io/github/stars/BlockstreamResearch/rust-secp256k1-zkp.svg?style=social) - Rust bindings for libsecp256k1-zkp — Confidential Assets and MuSig2 primitives powering Liquid.
+- [EmVault](https://github.com/gmikeska/emvault)![stars](https://img.shields.io/github/stars/gmikeska/emvault.svg?style=social) - Open-source Rust multisig custody library for Bitcoin and Liquid, created by the Emerald Foundation.
 
 ### Testing Resources
 - [Testnet Faucet](https://faucet.vulpem.com) - Get testnet L-BTC, USDt, and LCAD  
